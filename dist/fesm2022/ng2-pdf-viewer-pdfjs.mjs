@@ -717,4 +717,4 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "17.3.11", ngImpo
  */
 
 export { PdfViewerComponent, PdfViewerModule, RenderTextMode };
-//# sourceMappingURL=ng2-pdf-viewer.mjs.map
+//# sourceMappingURL=ng2-pdf-viewer-pdfjs.mjs.map

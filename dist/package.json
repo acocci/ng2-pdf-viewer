@@ -1,12 +1,12 @@
 {
-  "name": "ng2-pdf-viewer",
+  "name": "ng2-pdf-viewer-pdfjs",
   "version": "10.2.2",
   "description": "Angular 5+ component for rendering PDF",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git+https://vadimdez@github.com/VadimDez/ng2-pdf-viewer.git"
+    "url": "git+https://github.com/acocci/ng2-pdf-viewer.git"
   },
   "keywords": [
     "angular",
@@ -20,14 +20,14 @@
   ],
   "author": "Vadym Yatsyuk <vadym.yatsyuk@gmail.com>",
   "bugs": {
-    "url": "https://github.com/VadimDez/ng2-pdf-viewer/issues"
+    "url": "https://github.com/acocci/ng2-pdf-viewer.git/issues"
   },
-  "homepage": "https://github.com/VadimDez/ng2-pdf-viewer#readme",
+  "homepage": "https://github.com/acocci/ng2-pdf-viewer.git#readme",
   "dependencies": {
     "pdfjs-dist": "^4.3.136",
     "tslib": "^2.3.0"
   },
-  "module": "fesm2022/ng2-pdf-viewer.mjs",
+  "module": "fesm2022/ng2-pdf-viewer-pdfjs.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -35,9 +35,9 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2022": "./esm2022/ng2-pdf-viewer.mjs",
-      "esm": "./esm2022/ng2-pdf-viewer.mjs",
-      "default": "./fesm2022/ng2-pdf-viewer.mjs"
+      "esm2022": "./esm2022/ng2-pdf-viewer-pdfjs.mjs",
+      "esm": "./esm2022/ng2-pdf-viewer-pdfjs.mjs",
+      "default": "./fesm2022/ng2-pdf-viewer-pdfjs.mjs"
     }
   },
   "sideEffects": false
