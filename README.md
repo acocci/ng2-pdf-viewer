@@ -1,32 +1,18 @@
 <h1 align="center">Angular PDF Viewer</h1>
 <p align="center">
-  <a href="https://www.npmjs.com/package/ng2-pdf-viewer">
-    <img src="https://img.shields.io/npm/dm/ng2-pdf-viewer.svg?style=flat" alt="downloads">
+  <a href="https://www.npmjs.com/package/ng2-pdf-viewer-pdfjs">
+    <img src="https://img.shields.io/npm/dm/ng2-pdf-viewer-pdfjs.svg?style=flat" alt="downloads">
   </a>
-  <a href="https://badge.fury.io/js/ng2-pdf-viewer">
-    <img src="https://badge.fury.io/js/ng2-pdf-viewer.svg" alt="npm version">
+  <a href="https://badge.fury.io/js/ng2-pdf-viewer-pdfjs">
+    <img src="https://badge.fury.io/js/ng2-pdf-viewer-pdfjs.svg" alt="npm version">
   </a>
   <a href="https://gitter.im/ngx-pdf-viewer/Lobby" title="Gitter">
     <img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg" alt="Gitter"/>
-  </a>
-  <a href="https://www.paypal.me/vadimdez" title="Donate to this project using Paypal">
-    <img src="https://img.shields.io/badge/paypal-donate-yellow.svg" alt="PayPal donate button" />
   </a>
 </p>
 
 > PDF Viewer Component for Angular 5+
 
-### Demo page
-
-[https://vadimdez.github.io/ng2-pdf-viewer/](https://vadimdez.github.io/ng2-pdf-viewer/)
-
-#### Stackblitz Example
-
-[https://stackblitz.com/edit/ng2-pdf-viewer](https://stackblitz.com/edit/ng2-pdf-viewer)
-
-### Blog post
-
-[https://medium.com/@vadimdez/render-pdf-in-angular-4-927e31da9c76](https://medium.com/@vadimdez/render-pdf-in-angular-4-927e31da9c76)
 
 ## Overview
 
@@ -40,25 +26,13 @@
 
 ## Install
 
-### Angular >= 12
+### Angular
 ```
-npm install ng2-pdf-viewer
+npm install ng2-pdf-viewer-pdfjs
 ```
 > Partial Ivy compilated library bundles.
 
-### Angular >= 4
-```
-npm install ng2-pdf-viewer@^7.0.0
-```
-
-### Angular < 4
-```
-npm install ng2-pdf-viewer@~3.0.8
-```
-
 ## Usage
-
-*In case you're using ```systemjs``` see configuration [here](https://github.com/VadimDez/ng2-pdf-viewer/blob/master/SYSTEMJS.md).*
 
 Add ```PdfViewerModule``` to your module's ```imports```
 
@@ -67,7 +41,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
 
-import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { PdfViewerModule } from 'ng2-pdf-viewer-pdfjs';
 
 @NgModule({
   imports: [BrowserModule, PdfViewerModule],
@@ -96,7 +70,7 @@ import { Component } from '@angular/core';
   `
 })
 export class AppComponent {
-  pdfSrc = "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf";
+  pdfSrc = "{path to pdf}";
 }
 ```
 
@@ -132,7 +106,7 @@ export class AppComponent {
 Pass pdf location
 
 ```
-[src]="'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf'"
+[src]="'{path to pdf}'"
 ```
 
 For more control you can pass options object to ```[src]```. [See other attributes for the object here](https://github.com/mozilla/pdf.js/blob/master/src/display/api.js#L130-L222).
@@ -141,7 +115,7 @@ Options object for loading protected PDF would be:
 
  ```js
  {
-  url: 'https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf',
+  url: '{path to pdf}',
   withCredentials: true
  }
  ```
